@@ -1,0 +1,111 @@
+{
+  "fatigue": {
+    "creatives": 30,
+    "creatives_fatigued": 30,
+    "median_onset_day": 35.5,
+    "pct_spend_while_fatigued": 0.5408212325074965,
+    "roas_fresh": 3.4430162921076306,
+    "roas_fatigued": 1.7832689482584367,
+    "overall_roas": 2.545389687956066
+  },
+  "crfc": {
+    "pct_users_unreached": 0.04897095460594115,
+    "pct_users_under3": 0.1861536614405635,
+    "pct_users_over10": 0.32659809699140546,
+    "pct_impr_after_5th": 0.549963259860454
+  },
+  "ab": {
+    "n_control": 199894,
+    "n_variant": 200106,
+    "srm_p": 0.7374731418962854,
+    "conv_control": 0.0037770018109598087,
+    "conv_variant": 0.0028984638141784855,
+    "conv_rel_change": -0.23260195275312034,
+    "conv_z": -4.816990527696574,
+    "conv_p": 1.4573960409602904e-06,
+    "roas_control": 3.7099546970276616,
+    "roas_variant": 6.42329549652499,
+    "roas_uplift": 0.7313676368261859,
+    "roas_uplift_ci": [
+      0.5506431264831427,
+      0.9456970997886638
+    ],
+    "cost_per_user_control": 1.6225195353537376,
+    "cost_per_user_variant": 0.730488441126203,
+    "cost_change": -0.5497814200634916,
+    "cost_p": 0.0,
+    "rev_per_user_control": 6.0194739712047385,
+    "rev_per_user_variant": 4.692143114149501,
+    "rev_change": -0.2205061212000864,
+    "rev_p": 2.0923788283116854e-05,
+    "profit_per_user_control": 4.396954435851001,
+    "profit_per_user_variant": 3.9616546730232978,
+    "roi_control": 2.7099546970276616,
+    "roi_variant": 5.42329549652499
+  },
+  "ab_segments": [
+    {
+      "segment": "new",
+      "arm": "control",
+      "users": 120342.0,
+      "conv": 0.00258430140765485,
+      "roas": 2.5848279313430114
+    },
+    {
+      "segment": "new",
+      "arm": "variant",
+      "users": 120136.0,
+      "conv": 0.0019894119997336352,
+      "roas": 4.405139133431127
+    },
+    {
+      "segment": "returning",
+      "arm": "control",
+      "users": 79552.0,
+      "conv": 0.005581255028157683,
+      "roas": 5.406047389961745
+    },
+    {
+      "segment": "returning",
+      "arm": "variant",
+      "users": 79970.0,
+      "conv": 0.004264099037138927,
+      "roas": 9.460218979478041
+    }
+  ],
+  "response_model": {
+    "a_new": 0.0006813472600711812,
+    "a_returning": 0.001470690031485002,
+    "retention_per_exposure": 0.8246082472679326,
+    "variant_conv_predicted": 0.0029428369642663316,
+    "variant_conv_actual": 0.0028984638141784855
+  },
+  "cap_sweep": {
+    "best_roas_cap": "1",
+    "best_roas": 8.872475105468833,
+    "best_profit_cap": "12",
+    "best_profit_roas": 4.653193583619992,
+    "best_profit_roas_uplift": 0.2456947753291565,
+    "best_profit_vs_nocap": 0.047058438624886456,
+    "best_profit_rev_vs_nocap": -0.023361259085060815,
+    "nocap_roas": 3.735420325890389
+  },
+  "allocation": {
+    "1.0": {
+      "roas_static": 2.545389687956066,
+      "roas_dynamic": 2.8493310168815356,
+      "uplift": 0.11940856457603255
+    },
+    "0.7": {
+      "roas_static": 2.545389687956066,
+      "roas_dynamic": 2.6054264751853933,
+      "uplift": 0.02358648167445687
+    },
+    "0.5": {
+      "roas_static": 2.545389687956066,
+      "roas_dynamic": 2.5182876413504434,
+      "uplift": -0.010647503890606869
+    }
+  },
+  "combined_roas_uplift_naive": 0.7722045078639344
+}
